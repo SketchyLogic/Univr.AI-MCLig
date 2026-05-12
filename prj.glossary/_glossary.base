@@ -1,0 +1,17 @@
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - file.inFolder("prj.glossary")
+    order:
+      - file.name
+      - readOrderIndex
+      - tags
+      - CreatedAt
+    sort:
+      - property: readOrderIndex
+        direction: ASC
+    columnSize:
+      file.name: 250
+      note.readOrderIndex: 217
