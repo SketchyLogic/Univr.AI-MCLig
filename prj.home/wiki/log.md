@@ -47,6 +47,15 @@ Append-only. Each entry records what changed, who or what changed it, and why.
 
 ---
 
+## 2026-05-12
+
+### [6] New glossary entry: MC Atomic Moves in SMILES
+**By:** claude-sonnet-4-6
+**What changed:** Created `prj.glossary/MC Atomic Moves in SMILES.md` (readOrderIndex: 3). Entry shows each of the 9 MC chemical operations as a concrete before → after SMILES transformation, with a summary table, an explanatory callout on Kekulé vs aromatic notation, links to `[[SMILES]]`, `[[MC Search Components]]`, `[[Ring Local Minima in MC]]`, and `[[BRICS decomposition]]`, and 5 self-test questions. Added a Glossary section to `wiki/index.md` listing the new entry.
+**Why:** User requested a concept note integrating the glossary with SMILES-level illustrations of all 9 atomic moves.
+
+---
+
 ### [4] DEEP_DIVE_DIGEST executed for all paper sections, figures, and tables
 **By:** claude-sonnet-4-6
 **Scope:** Full paper — 8 sections, 3 figures, 3 tables (14 files total)

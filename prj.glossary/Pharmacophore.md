@@ -48,3 +48,6 @@ The paper uses the word in the [[Atomistic vs Fragment-based MC]] discussion: a 
 ## TLDR
 
 The abstract 3D pattern of chemical features (donors, acceptors, aromatics, charges, hydrophobes) that a molecule must present to bind a target. Distinct from the molecule itself: different scaffolds can satisfy the same pharmacophore.
+
+
+#Question features of the interaction at binding site, is the MD somehow encoded? (pharmacophore)

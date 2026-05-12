@@ -65,6 +65,16 @@ These are comprehensive reading aids — one per section, figure, and table of t
 
 ---
 
+## Glossary (`prj.glossary/`) — selected entries
+
+| Entry | Summary | readOrderIndex |
+|-------|---------|----------------|
+| [[MC Atomic Moves in SMILES]] | Before → after SMILES pairs for all 9 MC operations | 3 |
+
+*For the full 24-entry glossary listing, browse `prj.glossary/` directly. All entries carry `readOrderIndex` values; negative = prerequisite background, 0 = entry point, positive = progressive.*
+
+---
+
 ## Known structural issues (from LINT_GLOSSARY 2026-05-11)
 
 - **Broken wiki-links** in `Molecular fingerprint.md`: `[[Tanimoto similarity]]`, `[[ECFP4]]` — entries do not exist

@@ -4,34 +4,49 @@
     "type": "split",
     "children": [
       {
-        "id": "2d791d3bc8224afa",
+        "id": "86448065b3f2954c",
         "type": "tabs",
         "children": [
           {
-            "id": "f306f018d04fc03d",
-            "type": "leaf",
-            "state": {
-              "type": "bases",
-              "state": {
-                "file": "prj.glossary/_glossary.base",
-                "viewName": "Table"
-              },
-              "icon": "lucide-table",
-              "title": "_glossary"
-            }
-          },
-          {
-            "id": "7e9777294fd76d18",
+            "id": "400891257462730e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "prj.glossary/Molecular scaffold.md",
+                "file": "prj.home/wiki/index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Molecular scaffold"
+              "title": "index"
+            }
+          },
+          {
+            "id": "d0582a819c607c82",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "prj.home/wiki/pages/deep-dive-methods-mc-simulation.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "deep-dive-methods-mc-simulation"
+            }
+          },
+          {
+            "id": "af88f24daaaac6bf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "wiki/glossary/MC step selection probabilities.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "MC step selection probabilities"
             }
           }
         ],
@@ -89,12 +104,12 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "0eb615b32da93906",
@@ -110,7 +125,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "prj.glossary/Molecular scaffold.md",
+                "file": "prj.home/wiki/pages/deep-dive-methods-mc-simulation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +135,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Molecular scaffold"
+              "title": "Backlinks for deep-dive-methods-mc-simulation"
             }
           },
           {
@@ -172,17 +187,17 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "prj.glossary/Molecular scaffold.md",
+                "file": "prj.home/wiki/pages/deep-dive-methods-mc-simulation.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Molecular scaffold"
+              "title": "Outline of deep-dive-methods-mc-simulation"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -200,42 +215,112 @@
       "publish:Publish changes...": false
     }
   },
-  "active": "7e9777294fd76d18",
+  "floating": {
+    "id": "d9b297d0c14024d0",
+    "type": "floating",
+    "children": [
+      {
+        "id": "ebd3507f3d76b8fb",
+        "type": "window",
+        "children": [
+          {
+            "id": "54182c448bc6a399",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "ff0f7c41aa4fa7d5",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Cache.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Cache"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical",
+        "x": -1134,
+        "y": 0,
+        "width": 1134,
+        "height": 1440,
+        "maximize": false,
+        "zoom": 0.5
+      },
+      {
+        "id": "9aa8057ac791053b",
+        "type": "window",
+        "children": [
+          {
+            "id": "9ded79cdbe3e4b7d",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "db276f7c0e7e94e5",
+                "type": "leaf",
+                "state": {
+                  "type": "pdf",
+                  "state": {
+                    "file": "prj.home/OriginalPaper.Structural.GPCR.DeNovoProteinLigand.btag027.pdf"
+                  },
+                  "icon": "lucide-file-text",
+                  "title": "OriginalPaper.Structural.GPCR.DeNovoProteinLigand.btag027"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical",
+        "x": 1106,
+        "y": 1744,
+        "width": 700,
+        "height": 862,
+        "maximize": true,
+        "zoom": 2.5
+      }
+    ]
+  },
+  "active": "d0582a819c607c82",
   "lastOpenFiles": [
-    "prj.glossary/_glossary.base",
+    "wiki/glossary/MC step selection probabilities.md",
+    "Cache.md",
+    "prj.home/wiki/pages/deep-dive-methods-mc-simulation.md",
+    "prj.glossary/SMILES.md",
+    "wiki/log.md.tmp.34856.03b724b3baa6",
+    "wiki/index.md.tmp.34856.8858fb4429b2",
+    "wiki/glossary/RDKit.md",
+    "wiki/glossary/RDKit.md.tmp.34856.440e909a274d",
+    "prj.home/OriginalPaper.Structural.GPCR.DeNovoProteinLigand.btag027.pdf",
+    "wiki/log.md.tmp.34856.0c11424e7987",
+    "wiki/index.md.tmp.34856.16314ad3d83c",
+    "wiki/glossary/MC step selection probabilities.md.tmp.34856.6228d8b99776",
+    "wiki/log.md",
+    "wiki/log.md.tmp.34856.6e0abe4a69a5",
+    "wiki/index.md",
+    "wiki/index.md.tmp.34856.4694faefde60",
+    "wiki/glossary/Metropolis acceptance criterion.md",
+    "wiki/glossary/Metropolis acceptance criterion.md.tmp.34856.f6f03fae726d",
+    "wiki/glossary/Beta parameter β.md",
+    "wiki/glossary/Score change Δs.md",
+    "wiki/glossary/Exponential function.md",
+    "wiki/glossary/Monte Carlo simulation.md",
+    "prj.glossary/MC Atomic Moves in SMILES.md",
+    "prj.home/wiki/index.md",
+    "prj.home/wiki/pages/deep-dive-introduction.md",
+    "prj.glossary/Pharmacophore.md",
+    "prj.home/wiki/pages/deep-dive-abstract.md",
+    "prj.glossary/MMGBSA.md",
+    "prj.glossary/Molecular docking.md",
+    "prj.glossary/Molecular scaffold.md",
     "prj.glossary/Molecular fingerprint.md",
     "prj.glossary/Tanimoto similarity.md",
-    "prj.glossary/Dice Similarity vs Chai-1 Scoring.md.tmp.37200.1778513544575",
-    "prj.glossary/Dice Similarity vs Chai-1 Scoring.md.tmp.37200.1778513534620",
-    "prj.glossary/Dice Similarity vs Chai-1 Scoring.md.tmp.37200.1778513528413",
-    "prj.glossary/Tanimoto similarity.md.tmp.37200.1778513520977",
-    "prj.glossary/Molecular docking.md",
     "prj.glossary/De novo drug design.md",
     "prj.glossary/Atomistic vs Fragment-based MC.md",
-    "prj.glossary/BRICS decomposition.md",
-    "prj.glossary/pLDDT.md",
-    "prj.glossary/Pharmacophore.md",
-    "prj.glossary/Pharmacophore.md.tmp.37200.1778509181350",
-    "prj.glossary/Atomistic vs Fragment-based MC.md.tmp.37200.1778508413880",
-    "prj.glossary/SMILES.md",
-    "prj.glossary/Monte Carlo simulation.md",
-    "prj.glossary/Induced fit.md",
-    "prj.glossary/GPCR.md",
-    "prj.glossary/Binding site.md",
-    "prj.glossary/AlphaFold.md",
-    "prj.glossary/Metropolis criterion.md",
-    "prj.home/wiki/index.md",
-    "prj.home/OriginalPaper.Structural.GPCR.DeNovoProteinLigand.btag027.pdf",
-    "prj.home/Note.OriginalPaper.Structural.GPCR.DeNovoProteinLigand.btag027.md",
-    "prj.home/wiki/log.md",
-    "prj.glossary/Synthetic accessibility score.md",
-    "wiki/log.md.tmp.37008.2dcc5a256e75",
-    "wiki/index.md.tmp.37008.6ff34e165100",
-    "prj.home/wiki/pages/deep-dive-table-3.md",
-    "prj.home/wiki/pages/deep-dive-table-2.md",
-    "prj.home/wiki/pages/deep-dive-table-1.md",
-    "prj.home/wiki/pages/deep-dive-figure-3.md",
-    "prj.home/wiki/pages/deep-dive-figure-2.md",
-    "prj.home/wiki/pages/deep-dive-figure-1.md"
+    "prj.glossary/BRICS decomposition.md"
   ]
 }

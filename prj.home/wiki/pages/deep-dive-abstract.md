@@ -23,12 +23,15 @@ readOrderIndex: 0
 
 The abstract makes a three-part argument compressed into three dense sentences: current methods ignore protein flexibility; AI-MCLig uses an AI structure predictor to rebuild the protein–ligand complex at every MC step, making flexibility free; and this works on four real targets with scores matching known binders. The single idea to hold onto: **rebuilding the complex from scratch at each step replaces a static pocket with a dynamic one, without adding any explicit flexibility model**. Every section of the paper exists to justify or demonstrate one clause of this three-sentence promise.
 
+#Presentation 'rebuilding the complex from scratch...' deconstruct this for audience
+
 ## 1. What you need before reading this
 
 - **[[Molecular docking]]** — the standard method for placing a ligand in a protein pocket, almost always treating the protein as rigid.
 
 > [!caution] Prerequisite
 > If you do not know why rigid-pocket docking is the baseline and what its failure mode is, read [[Molecular docking]] before continuing.
+> #Presentation expose limits of rigid-poket docking
 
 - **[[De novo drug design]]** — generating entirely new chemical structures from scratch, as opposed to screening existing databases.
 - **[[Monte Carlo simulation]]** — stochastic search: random changes accepted or rejected probabilistically; used here to navigate chemical space.
@@ -65,17 +68,20 @@ $$\text{score} = 0.8 \cdot \text{Chai-1} - 0.1 \cdot \text{SA} + 0.05 \cdot \tex
 ## 4. The argument in one diagram
 
 **Gap: rigid-protein limitation in docking and generative design** → **Key mechanism: Chai-1 rebuilds complex from scratch at each MC step, giving implicit flexibility** → **Test: 4 targets, 2 MC protocols** → **Validation: MMGBSA and Boltz-2 scores overlap with known binders** → **Conclusion: AI-MCLig is a viable complementary approach**
+#Presentation after fixing prereq for audience present this argument outline
 
 ## 5. What is easy to miss
 
 > [!caution] "Besides compound flexibility"
 > The abstract mentions protein flexibility as if it is an additional bonus of the method. In practice, protein flexibility is the *central* contribution — existing methods handle compound flexibility to some extent already. The sentence structure buries the lead.
+> #Presentation menzionato da prof, il ligando si muove ma la tasca rimane rigida per praticità
 
 > [!Hint] Two protocols, not one
 > "MC protocols based on atom-/bond-type changes or based on combining larger chemical fragments" — many readers will miss that these are two independently tested methods. The fragment-based variant uses [[BRICS decomposition]] and operates at a higher chemical granularity; its validation is in a separate Results subsection with a different β parameter and reset schedule.
 
 > [!caution] "Complementary"
 > The final phrase — "could complement traditional molecular docking as well as generative *de novo* drug design approaches" — deliberately scopes the contribution. The authors are not claiming replacement, only addition. Understanding this framing is important for assessing the paper's actual novelty claim.
+> #Presentation
 
 ## 6. Open questions
 
