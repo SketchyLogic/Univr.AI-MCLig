@@ -56,6 +56,12 @@ Audits every file in `wiki/glossary/`: validates frontmatter fields, checks type
 
 Full instructions live in `.claude/commands/LINT_GLOSSARY.md`.
 
+### `/CREATE_PRESENTATION`
+
+Builds a ready-to-present slide deck from the wiki. Reads deep-dive pages (or annotation pages as fallback) in paper order and generates one Markdown file per section under `wiki/pages/presentation/`. Each file contains 1–3 slides with headline claims, bullet points, figure embeds, and a full presenter-notes script. Also creates `wiki/pages/presentation/index.md` and updates `wiki/index.md` and `wiki/log.md`.
+
+Full instructions live in `.claude/commands/CREATE_PRESENTATION.md`.
+
 ---
 
 ## Workflows

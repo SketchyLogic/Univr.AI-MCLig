@@ -50,7 +50,7 @@
             }
           }
         ],
-        "currentTab": 1,
+        "currentTab": 2,
         "stacked": true
       }
     ],
@@ -108,8 +108,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "0eb615b32da93906",
@@ -125,7 +124,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "prj.home/wiki/pages/deep-dive-methods-mc-simulation.md",
+                "file": "wiki/glossary/MC step selection probabilities.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -135,7 +134,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for deep-dive-methods-mc-simulation"
+              "title": "Backlinks for MC step selection probabilities"
             }
           },
           {
@@ -187,13 +186,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "prj.home/wiki/pages/deep-dive-methods-mc-simulation.md",
+                "file": "wiki/glossary/MC step selection probabilities.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of deep-dive-methods-mc-simulation"
+              "title": "Outline of MC step selection probabilities"
             }
           }
         ],
@@ -285,42 +284,43 @@
       }
     ]
   },
-  "active": "d0582a819c607c82",
+  "active": "af88f24daaaac6bf",
   "lastOpenFiles": [
+    "wiki/pages/presentation/prereq-mc-probabilities.md",
+    "wiki/pages/presentation/prereq-rdkit.md",
+    "wiki/pages/presentation/prereq-metropolis.md",
+    "wiki/pages/presentation/prereq-monte-carlo.md",
+    "wiki/pages/presentation/table-3-experimental-binders.md",
+    "wiki/pages/presentation/table-2-generated-compounds.md",
+    "wiki/pages/presentation/table-1-recovery.md",
+    "wiki/pages/presentation/figure-3-score-trajectories.md",
+    "wiki/pages/presentation/figure-2-ligand-evolution.md",
+    "wiki/pages/presentation/figure-1-chai1-affinity.md",
+    "wiki/pages/presentation/index.md",
+    "wiki/pages/presentation/section-conclusion.md",
+    "wiki/pages/presentation/section-fragment-based.md",
+    "wiki/pages/presentation/section-results-de-novo.md",
+    "wiki/pages/presentation/section-validation-recovery.md",
+    "wiki/pages/presentation/section-methods-pipeline.md",
+    "wiki/pages/presentation/section-monte-carlo.md",
+    "wiki/pages/presentation/section-ai-scoring-oracle.md",
+    "wiki/pages/presentation/section-introduction.md",
+    "wiki/pages/presentation/section-opening-hook.md",
+    "wiki/pages/presentation",
+    "wiki/pages",
+    "prj.slides",
+    "prj.home/OriginalPaper.Structural.GPCR.DeNovoProteinLigand.btag027.pdf",
+    "prj.home/wiki/pages/deep-dive-methods-mc-simulation.md",
+    "prj.home/wiki/index.md",
     "wiki/glossary/MC step selection probabilities.md",
     "Cache.md",
-    "prj.home/wiki/pages/deep-dive-methods-mc-simulation.md",
     "prj.glossary/SMILES.md",
     "wiki/log.md.tmp.34856.03b724b3baa6",
     "wiki/index.md.tmp.34856.8858fb4429b2",
     "wiki/glossary/RDKit.md",
     "wiki/glossary/RDKit.md.tmp.34856.440e909a274d",
-    "prj.home/OriginalPaper.Structural.GPCR.DeNovoProteinLigand.btag027.pdf",
     "wiki/log.md.tmp.34856.0c11424e7987",
     "wiki/index.md.tmp.34856.16314ad3d83c",
-    "wiki/glossary/MC step selection probabilities.md.tmp.34856.6228d8b99776",
-    "wiki/log.md",
-    "wiki/log.md.tmp.34856.6e0abe4a69a5",
-    "wiki/index.md",
-    "wiki/index.md.tmp.34856.4694faefde60",
-    "wiki/glossary/Metropolis acceptance criterion.md",
-    "wiki/glossary/Metropolis acceptance criterion.md.tmp.34856.f6f03fae726d",
-    "wiki/glossary/Beta parameter β.md",
-    "wiki/glossary/Score change Δs.md",
-    "wiki/glossary/Exponential function.md",
-    "wiki/glossary/Monte Carlo simulation.md",
-    "prj.glossary/MC Atomic Moves in SMILES.md",
-    "prj.home/wiki/index.md",
-    "prj.home/wiki/pages/deep-dive-introduction.md",
-    "prj.glossary/Pharmacophore.md",
-    "prj.home/wiki/pages/deep-dive-abstract.md",
-    "prj.glossary/MMGBSA.md",
-    "prj.glossary/Molecular docking.md",
-    "prj.glossary/Molecular scaffold.md",
-    "prj.glossary/Molecular fingerprint.md",
-    "prj.glossary/Tanimoto similarity.md",
-    "prj.glossary/De novo drug design.md",
-    "prj.glossary/Atomistic vs Fragment-based MC.md",
-    "prj.glossary/BRICS decomposition.md"
+    "wiki/glossary/MC step selection probabilities.md.tmp.34856.6228d8b99776"
   ]
 }
