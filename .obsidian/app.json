@@ -1,5 +1,7 @@
 {
   "alwaysUpdateLinks": true,
   "showUnsupportedFiles": true,
-  "spellcheck": false
+  "spellcheck": false,
+  "newFileLocation": "current",
+  "attachmentFolderPath": "./attachments"
 }

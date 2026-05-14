@@ -19,7 +19,7 @@ readOrderIndex: 0
 - Finding such molecules is the central challenge of drug discovery
 - The complication: proteins are flexible — the binding pocket **adapts** when a ligand arrives
 
-![[prj.home/OriginalPaper.Structural.GPCR.DeNovoProteinLigand.btag027.pdf#page=1]]
+[[prj.home/OriginalPaper.Structural.GPCR.DeNovoProteinLigand.btag027.pdf#page=1]]
 *Figure — title and abstract (p. 1). The paper's central claim: full protein flexibility at every design step.*
 
 > [!Example] Analogy for the audience

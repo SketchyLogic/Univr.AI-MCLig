@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "86448065b3f2954c",
+        "id": "6d452b717d49689d",
         "type": "tabs",
         "children": [
           {
-            "id": "400891257462730e",
+            "id": "42c25fed57cb76e8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "prj.home/wiki/index.md",
+                "file": "wiki/pages/presentation2/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -22,35 +22,35 @@
             }
           },
           {
-            "id": "d0582a819c607c82",
+            "id": "c6e3c8cf47eb56ba",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "prj.home/wiki/pages/deep-dive-methods-mc-simulation.md",
+                "file": "wiki/pages/presentation2/section-conclusions.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "deep-dive-methods-mc-simulation"
+              "title": "section-conclusions"
             }
           },
           {
-            "id": "af88f24daaaac6bf",
+            "id": "92325c7076d94a74",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "wiki/glossary/MC step selection probabilities.md",
+                "file": "wiki/pages/presentation2/section-results-fragment-mc.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "MC step selection probabilities"
+              "title": "section-results-fragment-mc"
             }
           }
         ],
-        "currentTab": 2,
+        "currentTab": 1,
         "stacked": true
       }
     ],
@@ -83,7 +83,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#Question",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -104,7 +104,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -186,13 +187,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "wiki/glossary/MC step selection probabilities.md",
+                "file": "Presentation.canvas",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of MC step selection probabilities"
+              "title": "Outline of Presentation"
             }
           }
         ],
@@ -215,112 +216,119 @@
     }
   },
   "floating": {
-    "id": "d9b297d0c14024d0",
+    "id": "ac25240224ce9a1e",
     "type": "floating",
     "children": [
       {
-        "id": "ebd3507f3d76b8fb",
+        "id": "f294f084aa1ea54d",
         "type": "window",
         "children": [
           {
-            "id": "54182c448bc6a399",
+            "id": "7e0cfa6bfa93bd02",
             "type": "tabs",
             "children": [
               {
-                "id": "ff0f7c41aa4fa7d5",
+                "id": "9b2507982e91b68c",
                 "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Cache.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "Cache"
-                }
-              }
-            ]
-          }
-        ],
-        "direction": "vertical",
-        "x": -1134,
-        "y": 0,
-        "width": 1134,
-        "height": 1440,
-        "maximize": false,
-        "zoom": 0.5
-      },
-      {
-        "id": "9aa8057ac791053b",
-        "type": "window",
-        "children": [
-          {
-            "id": "9ded79cdbe3e4b7d",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "db276f7c0e7e94e5",
-                "type": "leaf",
+                "pinned": true,
                 "state": {
                   "type": "pdf",
                   "state": {
                     "file": "prj.home/OriginalPaper.Structural.GPCR.DeNovoProteinLigand.btag027.pdf"
                   },
+                  "pinned": true,
                   "icon": "lucide-file-text",
                   "title": "OriginalPaper.Structural.GPCR.DeNovoProteinLigand.btag027"
+                }
+              },
+              {
+                "id": "0ae405c457930f36",
+                "type": "leaf",
+                "state": {
+                  "type": "pdf",
+                  "state": {
+                    "file": "prj.home/btag027_supplementary_data.pdf"
+                  },
+                  "icon": "lucide-file-text",
+                  "title": "btag027_supplementary_data"
+                }
+              }
+            ]
+          },
+          {
+            "id": "c6671acec264575b",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "10edaa4b59b0a3a9",
+                "type": "leaf",
+                "state": {
+                  "type": "canvas",
+                  "state": {
+                    "file": "Presentation.canvas",
+                    "viewState": {
+                      "x": 6938.02053192266,
+                      "y": 1423.273224697708,
+                      "zoom": -1.4537038048844229
+                    }
+                  },
+                  "icon": "lucide-layout-dashboard",
+                  "title": "Presentation"
                 }
               }
             ]
           }
         ],
         "direction": "vertical",
-        "x": 1106,
-        "y": 1744,
+        "x": 100,
+        "y": 286,
         "width": 700,
-        "height": 862,
+        "height": 946,
         "maximize": true,
-        "zoom": 2.5
+        "zoom": 2
       }
     ]
   },
-  "active": "af88f24daaaac6bf",
+  "active": "10edaa4b59b0a3a9",
   "lastOpenFiles": [
-    "wiki/pages/presentation/prereq-mc-probabilities.md",
-    "wiki/pages/presentation/prereq-rdkit.md",
-    "wiki/pages/presentation/prereq-metropolis.md",
-    "wiki/pages/presentation/prereq-monte-carlo.md",
-    "wiki/pages/presentation/table-3-experimental-binders.md",
-    "wiki/pages/presentation/table-2-generated-compounds.md",
-    "wiki/pages/presentation/table-1-recovery.md",
-    "wiki/pages/presentation/figure-3-score-trajectories.md",
-    "wiki/pages/presentation/figure-2-ligand-evolution.md",
-    "wiki/pages/presentation/figure-1-chai1-affinity.md",
-    "wiki/pages/presentation/index.md",
-    "wiki/pages/presentation/section-conclusion.md",
-    "wiki/pages/presentation/section-fragment-based.md",
-    "wiki/pages/presentation/section-results-de-novo.md",
-    "wiki/pages/presentation/section-validation-recovery.md",
-    "wiki/pages/presentation/section-methods-pipeline.md",
-    "wiki/pages/presentation/section-monte-carlo.md",
-    "wiki/pages/presentation/section-ai-scoring-oracle.md",
-    "wiki/pages/presentation/section-introduction.md",
-    "wiki/pages/presentation/section-opening-hook.md",
-    "wiki/pages/presentation",
-    "wiki/pages",
-    "prj.slides",
+    "wiki/pages/presentation2/section-conclusions.md",
+    "Presentation.canvas",
     "prj.home/OriginalPaper.Structural.GPCR.DeNovoProteinLigand.btag027.pdf",
-    "prj.home/wiki/pages/deep-dive-methods-mc-simulation.md",
-    "prj.home/wiki/index.md",
-    "wiki/glossary/MC step selection probabilities.md",
-    "Cache.md",
+    "wiki/pages/presentation2/index.md",
+    "wiki/pages/presentation2/section-results-fragment-mc.md",
+    "wiki/glossary/UMAP (uniform manifold approximation and projection).md",
+    "wiki/pages/presentation2/section-results-denovo-atomistic.md",
+    "wiki/glossary/RMSD (root mean square deviation).md",
+    "prj.home/btag027_supplementary_data.pdf",
+    "wiki/glossary/Ligand vs binder.md",
+    "wiki/pages/presentation2/section-results-chai1-affinity.md",
+    "wiki/pages/presentation2/section-results-recovery.md",
+    "wiki/pages/presentation2/section-methods-md-mmgbsa.md",
+    "wiki/pages/presentation2/section-methods-fragment-mc.md",
+    "wiki/pages/presentation2/section-methods-scoring.md",
+    "wiki/glossary/Metropolis acceptance criterion.md",
+    "wiki/pages/presentation2/section-methods-mc-simulation.md",
+    "prj.glossary/Why those probabilities for each move.md",
+    "prj.glossary/attachments/Pasted image 20260514071607.png",
+    "prj.glossary/attachments",
+    "wiki/pages/presentation2/section-introduction.md",
+    "prj.glossary/pLDDT.md",
+    "wiki/pages/presentation/index.md",
+    "wiki/pages/presentation/section-ai-scoring-oracle.md",
+    "wiki/log.md.tmp.27404.d0be47738336",
+    "wiki/index.md.tmp.27404.8591b6c21c3d",
+    "wiki/pages/presentation2/index.md.tmp.27404.dd0831ae7128",
+    "wiki/pages/presentation2/section-conclusions.md.tmp.27404.74dfc4a8bfb4",
+    "wiki/pages/presentation2/section-results-fragment-mc.md.tmp.27404.6ac5cbce6b6c",
+    "wiki/pages/presentation2/section-results-denovo-atomistic.md.tmp.27404.9bdfa4de3074",
+    "wiki/pages/presentation2/section-results-chai1-affinity.md.tmp.27404.7009c5e09fcb",
+    "wiki/pages/presentation/section-validation-recovery.md",
+    "wiki/pages/presentation/section-introduction.md",
+    "wiki/glossary/Why Chai-1 as oracle rather than formula-based physical eval of energy state.md",
     "prj.glossary/SMILES.md",
-    "wiki/log.md.tmp.34856.03b724b3baa6",
-    "wiki/index.md.tmp.34856.8858fb4429b2",
-    "wiki/glossary/RDKit.md",
-    "wiki/glossary/RDKit.md.tmp.34856.440e909a274d",
-    "wiki/log.md.tmp.34856.0c11424e7987",
-    "wiki/index.md.tmp.34856.16314ad3d83c",
-    "wiki/glossary/MC step selection probabilities.md.tmp.34856.6228d8b99776"
+    "wiki/pages/presentation/section-opening-hook.md",
+    "attachments/Figure1.CorrelationChaiScoreVsExperimentalBindingAffinity.png",
+    "Pasted image 20260514025445.png",
+    "wiki/pages/presentation/figure-1-chai1-affinity.md"
   ]
 }

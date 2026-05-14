@@ -11,6 +11,7 @@ Table of contents for the entire wiki. Update after every change.
 | Entry | Type | Index | Notes |
 |---|---|---|---|
 | [[Monte Carlo simulation]] | CONCEPT + PREREQUISITE | -3 | Core algorithm; read first |
+| [[RMSD (root mean square deviation)]] | DEFINITION + PREREQUISITE | -1 | Measures atomic displacement in Å; used in Figure 3C to quantify pocket flexibility |
 | [[Exponential function]] | DEFINITION + PREREQUISITE | -2 | Math building block for acceptance formula |
 | [[RDKit]] | CONCEPT + PREREQUISITE | -1 | Cheminformatics toolkit; 4 roles in AI-MCLig |
 | [[Metropolis acceptance criterion]] | CONCEPT + PREREQUISITE | -1 | The core decision rule P(Δs) = exp(−β·Δs) |
@@ -26,13 +27,35 @@ Table of contents for the entire wiki. Update after every change.
 | Entry | Type | Index | Notes |
 |---|---|---|---|
 | [[Beta parameter β]] | DEFINITION | 1 | β selectivity/temperature parameter |
+| [[p38 kinase]] | DEFINITION | 1 | Stress-response/inflammatory kinase; flexible DFG motif; one of the 4 AI-MCLig test targets |
+| [[Pim-1 kinase]] | DEFINITION | 1 | Oncogenic serine/threonine kinase; unusual Pro123 hinge; one of the 4 AI-MCLig test targets |
 | [[MC step selection probabilities]] | CONCEPT | 2 | How change types are chosen each step; empirical tuning |
+| [[Why Chai-1 as oracle rather than formula-based physical eval of energy state?]] | CONCEPT | 2 | Design rationale: speed + implicit flexibility vs. MM/MD |
+| [[UMAP (uniform manifold approximation and projection)]] | CONCEPT | 2 | Dimensionality reduction for chemical space visualisation; used in supplementary Fig. 14 |
+| [[Ligand vs binder]] | CONCEPT | 1 | Structural term vs. empirical affinity confirmation; why the paper hedges "putative binder" |
 
 ---
 
 ## Pages
 
-### Presentation
+### Presentation 2 (full paper walk-through)
+
+**Index**: [[wiki/pages/presentation2/index]]
+
+| File | Slides | Summary |
+|---|---|---|
+| [[wiki/pages/presentation2/section-introduction]] | 2 | Drug design problem; Chai-1 as flexibility oracle |
+| [[wiki/pages/presentation2/section-methods-mc-simulation]] | 2 | 9 operations; Metropolis; two-stage protocol |
+| [[wiki/pages/presentation2/section-methods-fragment-mc]] | 1 | BRICS fragment recombination; β = 5 |
+| [[wiki/pages/presentation2/section-methods-scoring]] | 1 | Composite score formula |
+| [[wiki/pages/presentation2/section-methods-md-mmgbsa]] | 1 | 20 ns MD + MMGBSA validation |
+| [[wiki/pages/presentation2/section-results-recovery]] | 2 | Dice recovery test; 8/11 exact |
+| [[wiki/pages/presentation2/section-results-chai1-affinity]] | 1 | Chai-1 vs. affinity; Figure 1 |
+| [[wiki/pages/presentation2/section-results-denovo-atomistic]] | 2 | De novo generation; Figures 2 & 3; Table 2 vs 3 |
+| [[wiki/pages/presentation2/section-results-fragment-mc]] | 1 | Fragment results; target-specific fragments |
+| [[wiki/pages/presentation2/section-conclusions]] | 1 | Central claim; bottleneck; future directions |
+
+### Presentation (section highlights)
 
 **Index**: [[wiki/pages/presentation/index]]
 

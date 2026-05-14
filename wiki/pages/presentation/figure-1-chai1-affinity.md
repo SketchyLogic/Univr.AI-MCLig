@@ -19,7 +19,7 @@ readOrderIndex: 0
 - Trend lines are consistently negative (better affinity = more negative kcal/mol), confirming the average correlation: e.g., bromodomain fit: $y = -7.80x + 0.74$
 - Critical caveat: individual data points scatter widely at any given Chai-1 value — the score guides a population, not a single prediction
 
-![[prj.home/OriginalPaper.Structural.GPCR.DeNovoProteinLigand.btag027.pdf#page=5]]
+[[prj.home/OriginalPaper.Structural.GPCR.DeNovoProteinLigand.btag027.pdf#page=5]]
 *Figure 1 — Illustration of the correlation between the experimental ligand-binding affinity and the Chai-1 confidence score for different ligands of the bromodomain complex (A), the serine/threonine-protein kinase pim-1 complex (B), and the p38 map kinase complex (C) (p. 5).*
 
 # Presenter Notes

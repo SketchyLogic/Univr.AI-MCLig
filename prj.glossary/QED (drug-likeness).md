@@ -26,3 +26,5 @@ A QED score close to 1.0 indicates a highly drug-like molecule; scores below 0.3
 
 ## TLDR
 A 0–1 score measuring how drug-like a molecule looks, based on its physicochemical properties; used to guide generative design and assess compound quality.
+
+Likely question: "Couldn't you just filter for drug-likeness after the simulation?" Technically yes, but incorporating it in the score ensures the search trajectory itself stays in drug-like space — avoiding wasted steps exploring regions the filter would discard.
