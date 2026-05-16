@@ -4,53 +4,27 @@
     "type": "split",
     "children": [
       {
-        "id": "6d452b717d49689d",
+        "id": "87c716b01333d47a",
         "type": "tabs",
         "children": [
           {
-            "id": "42c25fed57cb76e8",
+            "id": "25d51df8f3562dbe",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "wiki/pages/presentation2/index.md",
-                "mode": "source",
-                "source": false
+                "file": "Presentation.canvas",
+                "viewState": {
+                  "x": 5101.060304022667,
+                  "y": 1242.3403276153228,
+                  "zoom": -0.9999999999999998
+                }
               },
-              "icon": "lucide-file",
-              "title": "index"
-            }
-          },
-          {
-            "id": "c6e3c8cf47eb56ba",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "wiki/pages/presentation2/section-conclusions.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "section-conclusions"
-            }
-          },
-          {
-            "id": "92325c7076d94a74",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "wiki/pages/presentation2/section-results-fragment-mc.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "section-results-fragment-mc"
+              "icon": "lucide-layout-dashboard",
+              "title": "Presentation"
             }
           }
         ],
-        "currentTab": 1,
         "stacked": true
       }
     ],
@@ -104,8 +78,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -226,6 +199,7 @@
           {
             "id": "7e0cfa6bfa93bd02",
             "type": "tabs",
+            "dimension": 46.06299212598425,
             "children": [
               {
                 "id": "9b2507982e91b68c",
@@ -253,11 +227,13 @@
                   "title": "btag027_supplementary_data"
                 }
               }
-            ]
+            ],
+            "currentTab": 1
           },
           {
-            "id": "c6671acec264575b",
+            "id": "f0d6b920a6405d5e",
             "type": "tabs",
+            "dimension": 53.93700787401575,
             "children": [
               {
                 "id": "10edaa4b59b0a3a9",
@@ -267,9 +243,9 @@
                   "state": {
                     "file": "Presentation.canvas",
                     "viewState": {
-                      "x": 6938.02053192266,
-                      "y": 1423.273224697708,
-                      "zoom": -1.4537038048844229
+                      "x": 7397.792038849178,
+                      "y": 1019.888466664065,
+                      "zoom": -0.2962964434682522
                     }
                   },
                   "icon": "lucide-layout-dashboard",
@@ -280,8 +256,8 @@
           }
         ],
         "direction": "vertical",
-        "x": 100,
-        "y": 286,
+        "x": 969,
+        "y": 107,
         "width": 700,
         "height": 946,
         "maximize": true,
@@ -289,46 +265,54 @@
       }
     ]
   },
-  "active": "10edaa4b59b0a3a9",
+  "active": "25d51df8f3562dbe",
   "lastOpenFiles": [
-    "wiki/pages/presentation2/section-conclusions.md",
+    "attachments/Pasted image 20260516061612.png",
     "Presentation.canvas",
+    "attachments/Pasted image 20260516062016.png",
+    "attachments/Pasted image 20260516061959.png",
+    "attachments/Pasted image 20260516061947.png",
+    "attachments/Pasted image 20260516061913.png",
+    "attachments/Pasted image 20260516061858.png",
+    "attachments/Pasted image 20260516061844.png",
+    "attachments/Pasted image 20260516061828.png",
+    "attachments/Pasted image 20260516061806.png",
+    "attachments/Pasted image 20260516061749.png",
+    "attachments/Pasted image 20260516061736.png",
+    "prj.home/btag027_supplementary_data.pdf",
     "prj.home/OriginalPaper.Structural.GPCR.DeNovoProteinLigand.btag027.pdf",
+    "wiki/pages/presentation2/section-results-chai1-affinity.md",
+    "wiki/pages/presentation2/section-results-recovery.md",
+    "prj.glossary/Dice Similarity vs Chai-1 Scoring.md",
+    "wiki/glossary/Metropolis acceptance criterion.md",
     "wiki/pages/presentation2/index.md",
     "wiki/pages/presentation2/section-results-fragment-mc.md",
+    "wiki/pages/presentation2/section-conclusions.md",
+    "prj.presentation/presentation.synctex(busy)",
+    "prj.presentation/presentation.tex.tmp.11800.13ba0c9c068c",
+    "prj.presentation/presentation.fls",
+    "prj.presentation/presentation.synctex.gz",
+    "prj.presentation/presentation.snm",
+    "prj.presentation/presentation.toc",
+    "prj.presentation/presentation.nav",
+    "prj.presentation/presentation.out",
     "wiki/glossary/UMAP (uniform manifold approximation and projection).md",
     "wiki/pages/presentation2/section-results-denovo-atomistic.md",
     "wiki/glossary/RMSD (root mean square deviation).md",
-    "prj.home/btag027_supplementary_data.pdf",
     "wiki/glossary/Ligand vs binder.md",
-    "wiki/pages/presentation2/section-results-chai1-affinity.md",
-    "wiki/pages/presentation2/section-results-recovery.md",
     "wiki/pages/presentation2/section-methods-md-mmgbsa.md",
     "wiki/pages/presentation2/section-methods-fragment-mc.md",
     "wiki/pages/presentation2/section-methods-scoring.md",
-    "wiki/glossary/Metropolis acceptance criterion.md",
     "wiki/pages/presentation2/section-methods-mc-simulation.md",
     "prj.glossary/Why those probabilities for each move.md",
-    "prj.glossary/attachments/Pasted image 20260514071607.png",
-    "prj.glossary/attachments",
     "wiki/pages/presentation2/section-introduction.md",
     "prj.glossary/pLDDT.md",
     "wiki/pages/presentation/index.md",
     "wiki/pages/presentation/section-ai-scoring-oracle.md",
-    "wiki/log.md.tmp.27404.d0be47738336",
-    "wiki/index.md.tmp.27404.8591b6c21c3d",
-    "wiki/pages/presentation2/index.md.tmp.27404.dd0831ae7128",
-    "wiki/pages/presentation2/section-conclusions.md.tmp.27404.74dfc4a8bfb4",
-    "wiki/pages/presentation2/section-results-fragment-mc.md.tmp.27404.6ac5cbce6b6c",
-    "wiki/pages/presentation2/section-results-denovo-atomistic.md.tmp.27404.9bdfa4de3074",
-    "wiki/pages/presentation2/section-results-chai1-affinity.md.tmp.27404.7009c5e09fcb",
     "wiki/pages/presentation/section-validation-recovery.md",
     "wiki/pages/presentation/section-introduction.md",
     "wiki/glossary/Why Chai-1 as oracle rather than formula-based physical eval of energy state.md",
     "prj.glossary/SMILES.md",
-    "wiki/pages/presentation/section-opening-hook.md",
-    "attachments/Figure1.CorrelationChaiScoreVsExperimentalBindingAffinity.png",
-    "Pasted image 20260514025445.png",
-    "wiki/pages/presentation/figure-1-chai1-affinity.md"
+    "wiki/pages/presentation/section-opening-hook.md"
   ]
 }

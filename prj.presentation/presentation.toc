@@ -1,0 +1,11 @@
+\beamer@sectionintoc {1}{Introduction}{3}{0}{1}
+\beamer@sectionintoc {2}{Materials and Methods}{4}{0}{2}
+\beamer@subsectionintoc {2}{1}{MC Simulation Approach}{4}{0}{2}
+\beamer@subsectionintoc {2}{2}{Movesets}{5}{0}{2}
+\beamer@subsectionintoc {2}{3}{Scoring of Compounds During MC Simulation}{6}{0}{2}
+\beamer@subsectionintoc {2}{4}{Molecular Dynamics Simulations and MMGBSA Calculations}{7}{0}{2}
+\beamer@sectionintoc {3}{Results and Discussion}{8}{0}{3}
+\beamer@subsectionintoc {3}{1}{MC-Based Recovery of Target Ligands}{8}{0}{3}
+\beamer@subsectionintoc {3}{2}{Correlation of Chai-1 Confidence Score and Ligand Binding Affinity}{10}{0}{3}
+\beamer@subsectionintoc {3}{3}{\textit {De Novo} Generation Using Atomistic-Step MC Simulation}{11}{0}{3}
+\beamer@sectionintoc {4}{Conclusion}{13}{0}{4}

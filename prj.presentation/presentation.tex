@@ -1,0 +1,264 @@
+\documentclass{beamer}
+\usetheme{Madrid}
+\usecolortheme{default}
+
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{array}
+
+\title[\textit{De Novo} Protein--Ligand Design]{\textit{De Novo} Protein--Ligand Design Including Protein Flexibility and Conformational Adaptation}
+\author{Jakob Agamia \and Martin Zacharias}
+\institute{Technical University Munich}
+\date{\textit{Bioinformatics}, 2026, 42(2), btag027}
+
+\begin{document}
+
+% ------------------------------------------------------------
+% TITLE SLIDE
+% ------------------------------------------------------------
+\begin{frame}
+  \titlepage
+\end{frame}
+
+% ------------------------------------------------------------
+% OUTLINE
+% ------------------------------------------------------------
+\begin{frame}{Outline}
+  \tableofcontents
+\end{frame}
+
+% ============================================================
+\section{Introduction}
+% ============================================================
+
+\begin{frame}{Introduction}
+  \begin{block}{The problem}
+    \textit{Designing drugs means finding small molecules that bind to a specific protein --- but proteins are not rigid locks.}
+    \begin{itemize}
+      \item Many drugs are small organic molecules that bind a target protein and alter its function
+      \item The search happens in a virtually infinite chemical space
+      \item Traditional methods assume a fixed binding pocket, ignoring induced fit --- a critical limitation
+    \end{itemize}
+  \end{block}
+
+  \vspace{0.5em}
+
+  \begin{block}{The opportunity}
+    \textit{AI structure predictors make protein flexibility available at every evaluation step --- this is the paper's core insight.}
+    \begin{itemize}
+      \item AlphaFold successors can predict a protein--ligand complex from sequence + SMILES in seconds
+      \item Explore this vast chemical space with a stochastic search guided by an AI oracle
+    \end{itemize}
+  \end{block}
+\end{frame}
+
+% ============================================================
+\section{Materials and Methods}
+% ============================================================
+
+% ------ MC simulation approach ------------------------------
+\subsection{MC Simulation Approach}
+
+\begin{frame}{MC Simulation Approach}
+  \textit{AI-MCLig grows a ligand from benzene by applying random chemical operations, accepting or rejecting each change based on how much it improves the Chai-1 score.}
+
+  \vspace{0.8em}
+  \begin{itemize}
+    \item Start from benzene (the simplest aromatic scaffold) as the initial SMILES
+    \item At each step: apply one chemical operation from a \textbf{moveset}
+    \item Rebuild the full protein--ligand complex with Chai-1 from scratch $\rightarrow$ get new pLDDT score
+    \item Accept or reject using the \textbf{Metropolis criterion}:
+      \[
+        P(\Delta s) = \exp(-\beta \cdot \Delta s)
+      \]
+  \end{itemize}
+\end{frame}
+
+% ------ Movesets --------------------------------------------
+\subsection{Movesets}
+
+\begin{frame}{Movesets}
+  \begin{columns}[T]
+    \begin{column}{0.48\textwidth}
+      \begin{block}{9 Atomistic moves \quad $\beta = 50$}
+        \textit{Less exploratory --- fine-grained edits.}\\[0.4em]
+        Nine atom-level chemical operations (add/remove atoms and groups, change atom or bond types, form/break rings). Probabilities empirically tuned on three protein targets.
+      \end{block}
+    \end{column}
+    \begin{column}{0.48\textwidth}
+      \begin{block}{BRICS fragment moves \quad $\beta = 5$}
+        \textit{More exploratory --- larger jumps.}\\[0.4em]
+        Instead of atom-level edits, the fragment-based variant recombines whole molecular building blocks. Larger score changes per step require a lower $\beta$ to maintain a reasonable acceptance rate.
+      \end{block}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+% ------ Scoring ---------------------------------------------
+\subsection{Scoring of Compounds During MC Simulation}
+
+\begin{frame}{Scoring of Compounds During MC Simulation}
+  \textit{The score is not just Chai-1 --- three drug-property biases steer the search toward synthesisable, soluble, drug-like molecules.}
+
+  \[
+    \text{score} = 0.8 \cdot \text{Chai-1} - 0.1 \cdot \text{SA} + 0.05 \cdot \text{ESOL} + 0.05 \cdot \text{QED}
+  \]
+
+  \begin{itemize}
+    \item \textbf{Chai-1} (0.8): pLDDT confidence of the predicted complex --- proxy for binding affinity
+    \item \textbf{SA} ($-0.1$): synthetic accessibility score --- penalises hard-to-synthesise molecules; capped at a minimum complexity threshold so the ligand is large enough to fill the pocket
+    \item \textbf{ESOL} ($+0.05$): estimated aqueous solubility (Delaney 2004) --- favours water-soluble compounds
+    \item \textbf{QED} ($+0.05$): quantitative estimate of drug-likeness (Bickerton et al.\ 2012, without MW factor) --- favours Lipinski-compliant molecules
+  \end{itemize}
+\end{frame}
+
+% ------ MD / MMGBSA -----------------------------------------
+\subsection{Molecular Dynamics Simulations and MMGBSA Calculations}
+
+\begin{frame}{Molecular Dynamics Simulations and MMGBSA Calculations}
+  \begin{columns}[T]
+    \begin{column}{0.48\textwidth}
+      \begin{block}{What is MMGBSA?}
+        \begin{itemize}
+          \item Estimates the free energy of binding
+          \item Based on MD simulation + implicit solvation
+          \item More negative $=$ stronger binding
+          \item Typical drug range: $-15$ to $-50$ kcal/mol
+        \end{itemize}
+      \end{block}
+    \end{column}
+    \begin{column}{0.48\textwidth}
+      \begin{block}{Why use it here?}
+        \begin{itemize}
+          \item Chai-1 gives a structural confidence score; MMGBSA is classical physics (force field + thermodynamics)
+          \item Two methods with different assumptions that \textbf{agree} $\Rightarrow$ stronger evidence of correctness
+        \end{itemize}
+      \end{block}
+    \end{column}
+  \end{columns}
+
+  \vspace{0.6em}
+  \begin{alertblock}{Result}
+    Generated compounds show MMGBSA values between $-19$ and $-57$ kcal/mol --- the same range as experimentally known binders (Table 3).
+  \end{alertblock}
+\end{frame}
+
+% ============================================================
+\section{Results and Discussion}
+% ============================================================
+
+% ------ Recovery test ---------------------------------------
+\subsection{MC-Based Recovery of Target Ligands}
+
+\begin{frame}{MC-Based Recovery of Target Ligands from Simple Starting Compounds}
+  \textit{Does the chemical-space engine work? Replacing Chai-1 with dice similarity to a known ligand, the MC search rediscovers the target compound from benzene in most cases.}
+
+  \vspace{0.6em}
+  \begin{itemize}
+    \item \textbf{Validation strategy:} swap the oracle score for \textbf{Dice similarity} to a known target compound --- if the search works, it should recover the target
+    \item \textbf{Result (Table 1):} 8 out of 11 compounds recovered with Dice score = 1.00; the remaining 3 reached Dice $\geq 0.73$
+    \item Some complex compounds got stuck in local minima due to the rough chemical-space landscape --- not a failure, the search still finds chemically close solutions
+    \item Raising the temperature (lowering $\beta$) allows more exploration but reduces selectivity --- the two-stage protocol (30 parallel runs $\times$ 5000 steps, then 1 run $\times$ 10\,000 steps) is used instead
+  \end{itemize}
+\end{frame}
+
+% ------ About these validations -----------------------------
+
+\begin{frame}{About These Validations}
+  The two validations are complementary, not redundant:
+
+  \vspace{0.8em}
+  \begin{center}
+    \renewcommand{\arraystretch}{1.5}
+    \begin{tabular}{>{\bfseries}p{3.5cm} p{3.5cm} p{3cm}}
+      \toprule
+      Validation & What it tests & When \\
+      \midrule
+      Recovery test (Table 1) & Does the \textbf{search engine} work? & Before real design \\
+      \addlinespace
+      MMGBSA + Boltz-2 (Table 2) & Are the generated compounds \textbf{plausible binders}? & After real design \\
+      \bottomrule
+    \end{tabular}
+  \end{center}
+\end{frame}
+
+% ------ Chai-1 correlation ----------------------------------
+\subsection{Correlation of Chai-1 Confidence Score and Ligand Binding Affinity}
+
+\begin{frame}{Chai-1: The Imperfect Oracle}
+  \textit{Chai-1 pLDDT is not a direct affinity measurement --- but its average trend is positive, and that is enough to guide a Monte Carlo search uphill.}
+
+  \vspace{0.6em}
+  \begin{itemize}
+    \item Three protein targets evaluated: bromodomain, Pim-1 kinase, p38 kinase
+    \item Experimental binding affinities (kcal/mol) from PDBbind (Liu et al.\ 2017) compared to Chai-1 pLDDT scores
+    \item \textbf{Key result:} no direct point-to-point correlation; but the \textbf{average trend} across binned Chai-1 scores is consistently positive for all three targets (Figure 1)
+    \item Autodock Vina tested as alternative oracle --- no significant improvement in correlation
+    \item \textbf{Conclusion:} the oracle is imperfect but good enough to guide the search
+  \end{itemize}
+\end{frame}
+
+% ------ De novo generation - results ------------------------
+\subsection{\textit{De Novo} Generation Using Atomistic-Step MC Simulation}
+
+\begin{frame}{\textit{De Novo} Generation: Targets and Scores}
+  \textit{From benzene to a drug-like compound in 2\,000 steps: AI-MCLig generates novel ligands whose MMGBSA and Boltz-2 scores match experimentally known binders.}
+
+  \vspace{0.6em}
+  \begin{itemize}
+    \item Applied to four targets: bromodomain, p38 kinase, Pim-1 kinase, $\beta$-1 adrenergic receptor (GPCR)
+    \item 2\,000 MC steps, $\beta = 50$, starting from benzene; \textbf{3 independent runs per target} (${\sim}20$ h each on NVIDIA RTX4090)
+    \item Final Chai-1 scores: \textbf{0.85--0.92} across all 12 compounds (Table 2)
+    \item MMGBSA scores: \textbf{$-19$ to $-57$ kcal/mol} --- in the same range as experimentally validated high-affinity binders (Table 3)
+  \end{itemize}
+\end{frame}
+
+% ------ De novo generation - convergence --------------------
+
+\begin{frame}{\textit{De Novo} Generation: Convergence and Protein Adaptation}
+  \begin{itemize}
+    \item Score improves rapidly in the \textbf{first 250 steps}, then more gradually (Figure 3A)
+    \item Pocket RMSD (Figure 3C):
+      \begin{itemize}
+        \item \textbf{Bromodomain} stays low (${\sim}0.5$ \AA) --- rigid pocket
+        \item \textbf{p38 kinase} and \textbf{Pim-1 kinase} show larger fluctuations (0.5--2.0 \AA) --- flexible pockets adapting to each candidate ligand
+      \end{itemize}
+    \item \textbf{Cleanup phase:} 100 additional steps optimising SA, ESOL, QED with a Chai-1 threshold constraint --- improves drug-likeness without losing the binding score
+    \item UMAP analysis: structurally diverse outputs per target all land near known-binder clusters in chemical space
+  \end{itemize}
+\end{frame}
+
+% ============================================================
+\section{Conclusion}
+% ============================================================
+
+\begin{frame}{Conclusion}
+  \textit{AI-MCLig demonstrates that a simple Monte Carlo search scored by an AI structure predictor is sufficient to generate novel drug-like ligands with predicted binding energies comparable to known experimental binders.}
+
+  \vspace{0.6em}
+  \begin{itemize}
+    \item \textbf{Central claim:} Chai-1 as a scoring oracle inside an MC loop enables \textit{de novo} ligand generation with \textbf{full protein flexibility} --- no rigid pocket assumption
+    \item \textbf{Validated on 4 targets:} bromodomain, p38 kinase, Pim-1 kinase, $\beta$-1 adrenergic receptor --- diverse target classes
+    \item \textbf{MMGBSA and Boltz-2 scores} of generated compounds overlap with experimentally known high-affinity binders (Tables 2 \& 3)
+    \item \textbf{Complementary, not competing:} supplements traditional docking and deep generative models; adaptable to scaffold optimisation, side-chain refinement, or fragment recombination
+  \end{itemize}
+\end{frame}
+
+% ============================================================
+\section*{Q\&A}
+% ============================================================
+
+\begin{frame}{Ask Us Something}
+  \begin{itemize}
+    \item Why Chai-1 as oracle rather than a formula-based physical energy evaluation?
+    \item Why those specific probabilities for each move?
+    \item What is $\beta$? (Metropolis acceptance criterion)
+    \item Difference between \textit{ligand} and \textit{binder}
+    \item Why start with benzene?
+    \item Is high affinity always the functional requirement?
+    \item Once the score plateaus after ${\sim}250$ moves, the MC engine seems inefficient --- how would you fix it?
+  \end{itemize}
+\end{frame}
+
+\end{document}

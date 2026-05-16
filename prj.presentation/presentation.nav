@@ -1,0 +1,62 @@
+\headcommand {\slideentry {0}{0}{1}{1/1}{}{0}}
+\headcommand {\beamer@framepages {1}{1}}
+\headcommand {\slideentry {0}{0}{2}{2/2}{}{0}}
+\headcommand {\beamer@framepages {2}{2}}
+\headcommand {\beamer@sectionpages {1}{2}}
+\headcommand {\beamer@subsectionpages {1}{2}}
+\headcommand {\sectionentry {1}{Introduction}{3}{Introduction}{0}}
+\headcommand {\slideentry {1}{0}{1}{3/3}{}{0}}
+\headcommand {\beamer@framepages {3}{3}}
+\headcommand {\beamer@sectionpages {3}{3}}
+\headcommand {\beamer@subsectionpages {3}{3}}
+\headcommand {\sectionentry {2}{Materials and Methods}{4}{Materials and Methods}{0}}
+\headcommand {\beamer@subsectionpages {4}{3}}
+\headcommand {\beamer@subsectionentry {0}{2}{1}{4}{MC Simulation Approach}}
+\headcommand {\slideentry {2}{1}{1}{4/4}{MC Simulation Approach}{0}}
+\headcommand {\beamer@framepages {4}{4}}
+\headcommand {\beamer@subsectionpages {4}{4}}
+\headcommand {\beamer@subsectionentry {0}{2}{2}{5}{Movesets}}
+\headcommand {\slideentry {2}{2}{1}{5/5}{Movesets}{0}}
+\headcommand {\beamer@framepages {5}{5}}
+\headcommand {\beamer@subsectionpages {5}{5}}
+\headcommand {\beamer@subsectionentry {0}{2}{3}{6}{Scoring of Compounds During MC Simulation}}
+\headcommand {\slideentry {2}{3}{1}{6/6}{Scoring of Compounds During MC Simulation}{0}}
+\headcommand {\beamer@framepages {6}{6}}
+\headcommand {\beamer@subsectionpages {6}{6}}
+\headcommand {\beamer@subsectionentry {0}{2}{4}{7}{Molecular Dynamics Simulations and MMGBSA Calculations}}
+\headcommand {\slideentry {2}{4}{1}{7/7}{Molecular Dynamics Simulations and MMGBSA Calculations}{0}}
+\headcommand {\beamer@framepages {7}{7}}
+\headcommand {\beamer@sectionpages {4}{7}}
+\headcommand {\beamer@subsectionpages {7}{7}}
+\headcommand {\sectionentry {3}{Results and Discussion}{8}{Results and Discussion}{0}}
+\headcommand {\beamer@subsectionpages {8}{7}}
+\headcommand {\beamer@subsectionentry {0}{3}{1}{8}{MC-Based Recovery of Target Ligands}}
+\headcommand {\slideentry {3}{1}{1}{8/8}{MC-Based Recovery of Target Ligands}{0}}
+\headcommand {\beamer@framepages {8}{8}}
+\headcommand {\slideentry {3}{1}{2}{9/9}{MC-Based Recovery of Target Ligands}{0}}
+\headcommand {\beamer@framepages {9}{9}}
+\headcommand {\beamer@subsectionpages {8}{9}}
+\headcommand {\beamer@subsectionentry {0}{3}{2}{10}{Correlation of Chai-1 Confidence Score and Ligand Binding Affinity}}
+\headcommand {\slideentry {3}{2}{1}{10/10}{Correlation of Chai-1 Confidence Score and Ligand Binding Affinity}{0}}
+\headcommand {\beamer@framepages {10}{10}}
+\headcommand {\beamer@subsectionpages {10}{10}}
+\headcommand {\beamer@subsectionentry {0}{3}{3}{11}{\textit {De Novo} Generation Using Atomistic-Step MC Simulation}}
+\headcommand {\slideentry {3}{3}{1}{11/11}{\textit {De Novo} Generation Using Atomistic-Step MC Simulation}{0}}
+\headcommand {\beamer@framepages {11}{11}}
+\headcommand {\slideentry {3}{3}{2}{12/12}{\textit {De Novo} Generation Using Atomistic-Step MC Simulation}{0}}
+\headcommand {\beamer@framepages {12}{12}}
+\headcommand {\beamer@sectionpages {8}{12}}
+\headcommand {\beamer@subsectionpages {11}{12}}
+\headcommand {\sectionentry {4}{Conclusion}{13}{Conclusion}{0}}
+\headcommand {\slideentry {4}{0}{1}{13/13}{}{0}}
+\headcommand {\beamer@framepages {13}{13}}
+\headcommand {\beamer@sectionpages {13}{13}}
+\headcommand {\beamer@subsectionpages {13}{13}}
+\headcommand {\sectionentry {5}{Q\&A}{14}{Q\&A}{0}}
+\headcommand {\slideentry {5}{0}{1}{14/14}{}{0}}
+\headcommand {\beamer@framepages {14}{14}}
+\headcommand {\beamer@partpages {1}{14}}
+\headcommand {\beamer@subsectionpages {14}{14}}
+\headcommand {\beamer@sectionpages {14}{14}}
+\headcommand {\beamer@documentpages {14}}
+\headcommand {\gdef \inserttotalframenumber {14}}
