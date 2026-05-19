@@ -4,24 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "87c716b01333d47a",
+        "id": "a00d5d415d04bf8f",
         "type": "tabs",
         "children": [
           {
-            "id": "25d51df8f3562dbe",
+            "id": "6228f4a6fb8c2dcc",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "Presentation.canvas",
-                "viewState": {
-                  "x": 5101.060304022667,
-                  "y": 1242.3403276153228,
-                  "zoom": -0.9999999999999998
-                }
+                "file": "wiki/glossary/Beta parameter β.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "Presentation"
+              "icon": "lucide-file",
+              "title": "Beta parameter β"
             }
           }
         ],
@@ -82,7 +79,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 397.5
   },
   "right": {
     "id": "0eb615b32da93906",
@@ -160,13 +157,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Presentation.canvas",
+                "file": "wiki/glossary/Beta parameter β.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Presentation"
+              "title": "Outline of Beta parameter β"
             }
           }
         ],
@@ -188,87 +185,14 @@
       "publish:Publish changes...": false
     }
   },
-  "floating": {
-    "id": "ac25240224ce9a1e",
-    "type": "floating",
-    "children": [
-      {
-        "id": "f294f084aa1ea54d",
-        "type": "window",
-        "children": [
-          {
-            "id": "7e0cfa6bfa93bd02",
-            "type": "tabs",
-            "dimension": 46.06299212598425,
-            "children": [
-              {
-                "id": "9b2507982e91b68c",
-                "type": "leaf",
-                "pinned": true,
-                "state": {
-                  "type": "pdf",
-                  "state": {
-                    "file": "prj.home/OriginalPaper.Structural.GPCR.DeNovoProteinLigand.btag027.pdf"
-                  },
-                  "pinned": true,
-                  "icon": "lucide-file-text",
-                  "title": "OriginalPaper.Structural.GPCR.DeNovoProteinLigand.btag027"
-                }
-              },
-              {
-                "id": "0ae405c457930f36",
-                "type": "leaf",
-                "state": {
-                  "type": "pdf",
-                  "state": {
-                    "file": "prj.home/btag027_supplementary_data.pdf"
-                  },
-                  "icon": "lucide-file-text",
-                  "title": "btag027_supplementary_data"
-                }
-              }
-            ],
-            "currentTab": 1
-          },
-          {
-            "id": "f0d6b920a6405d5e",
-            "type": "tabs",
-            "dimension": 53.93700787401575,
-            "children": [
-              {
-                "id": "10edaa4b59b0a3a9",
-                "type": "leaf",
-                "state": {
-                  "type": "canvas",
-                  "state": {
-                    "file": "Presentation.canvas",
-                    "viewState": {
-                      "x": 7397.792038849178,
-                      "y": 1019.888466664065,
-                      "zoom": -0.2962964434682522
-                    }
-                  },
-                  "icon": "lucide-layout-dashboard",
-                  "title": "Presentation"
-                }
-              }
-            ]
-          }
-        ],
-        "direction": "vertical",
-        "x": 969,
-        "y": 107,
-        "width": 700,
-        "height": 946,
-        "maximize": true,
-        "zoom": 2
-      }
-    ]
-  },
-  "active": "25d51df8f3562dbe",
+  "active": "6228f4a6fb8c2dcc",
   "lastOpenFiles": [
-    "attachments/Pasted image 20260516061612.png",
+    "Domande per professore.md",
+    "prj.home/OriginalPaper.Structural.GPCR.DeNovoProteinLigand.btag027.pdf",
+    "prj.presentation/presentation.pdf",
+    "prj.home/btag027_supplementary_data.pdf",
     "Presentation.canvas",
+    "attachments/Pasted image 20260516061612.png",
     "attachments/Pasted image 20260516062016.png",
     "attachments/Pasted image 20260516061959.png",
     "attachments/Pasted image 20260516061947.png",
@@ -278,9 +202,6 @@
     "attachments/Pasted image 20260516061828.png",
     "attachments/Pasted image 20260516061806.png",
     "attachments/Pasted image 20260516061749.png",
-    "attachments/Pasted image 20260516061736.png",
-    "prj.home/btag027_supplementary_data.pdf",
-    "prj.home/OriginalPaper.Structural.GPCR.DeNovoProteinLigand.btag027.pdf",
     "wiki/pages/presentation2/section-results-chai1-affinity.md",
     "wiki/pages/presentation2/section-results-recovery.md",
     "prj.glossary/Dice Similarity vs Chai-1 Scoring.md",
@@ -295,7 +216,6 @@
     "prj.presentation/presentation.snm",
     "prj.presentation/presentation.toc",
     "prj.presentation/presentation.nav",
-    "prj.presentation/presentation.out",
     "wiki/glossary/UMAP (uniform manifold approximation and projection).md",
     "wiki/pages/presentation2/section-results-denovo-atomistic.md",
     "wiki/glossary/RMSD (root mean square deviation).md",
@@ -312,7 +232,6 @@
     "wiki/pages/presentation/section-validation-recovery.md",
     "wiki/pages/presentation/section-introduction.md",
     "wiki/glossary/Why Chai-1 as oracle rather than formula-based physical eval of energy state.md",
-    "prj.glossary/SMILES.md",
-    "wiki/pages/presentation/section-opening-hook.md"
+    "prj.glossary/SMILES.md"
   ]
 }
